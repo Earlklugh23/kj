@@ -2,19 +2,18 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>경제·경기 지표 실시간 포털</title>
 
-  <!-- iOS 홈 화면 추가 전용 아이콘 (Gear UP 디자인 내장) -->
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23193e73'/%3E%3Cstop offset='100%25' stop-color='%230b1931'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='180' height='180' rx='40' fill='url(%23bg)'/%3E%3Ccircle cx='104' cy='28' r='4.5' fill='%23ffffff' opacity='0.9'/%3E%3Ccircle cx='117' cy='33' r='4' fill='%23ffffff' opacity='0.8'/%3E%3Ccircle cx='128' cy='40' r='3.5' fill='%23ffffff' opacity='0.65'/%3E%3Ccircle cx='138' cy='49' r='3' fill='%23ffffff' opacity='0.5'/%3E%3Ccircle cx='145' cy='60' r='2.5' fill='%23ffffff' opacity='0.35'/%3E%3Cpath fill='%23ffffff' fill-rule='evenodd' clip-rule='evenodd' d='M90 38c2.9 0 5.4 1.9 6.2 4.7l1.7 6.1c2.4.6 4.7 1.5 6.9 2.8l5.8-2.6c2.6-1.2 5.7-.6 7.7 1.4l5.6 5.6c2 2 2.6 5.1 1.4 7.7l-2.6 5.8c1.3 2.2 2.2 4.5 2.8 6.9l6.1 1.7c2.8.8 4.7 3.3 4.7 6.2v8c0 2.9-1.9 5.4-4.7 6.2l-6.1 1.7c-.6 2.4-1.5 4.7-2.8 6.9l2.6 5.8c1.2 2.6.6 5.7-1.4 7.7l-5.6 5.6c-2 2-5.1 2.6-7.7 1.4l-5.8-2.6c-2.2 1.3-4.5 2.2-6.9 2.8l-1.7 6.1c-.8 2.8-3.3 4.7-6.2 4.7h-8c-2.9 0-5.4-1.9-6.2-4.7l-1.7-6.1c-2.4-.6-4.7-1.5-6.9-2.8l-5.8 2.6c-2.6 1.2-5.7.6-7.7-1.4l-5.6-5.6c-2-2-2.6-5.1-1.4-7.7l2.6-5.8c-1.3-2.2-2.2-4.5-2.8-6.9l-6.1-1.7c-2.8-.8-4.7-3.3-4.7-6.2v-8c0-2.9 1.9-5.4 4.7-6.2l6.1-1.7c.6-2.4 1.5-4.7 2.8-6.9l-2.6-5.8c-1.2-2.6-.6-5.7 1.4-7.7l5.6-5.6c2-2 5.1-2.6 7.7-1.4l5.8 2.6c2.2-1.3 4.5-2.2 6.9-2.8l1.7-6.1c.8-2.8 3.3-4.7 6.2-4.7h8zm-4 32v60h8V70h12L90 48 74 70h12z'/%3E%3C/svg%3E" />
-  
-  <!-- 브라우저 탭 파비콘 -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23193e73'/%3E%3Cstop offset='100%25' stop-color='%230b1931'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='180' height='180' rx='40' fill='url(%23bg)'/%3E%3Ccircle cx='104' cy='28' r='4.5' fill='%23ffffff' opacity='0.9'/%3E%3Ccircle cx='117' cy='33' r='4' fill='%23ffffff' opacity='0.8'/%3E%3Ccircle cx='128' cy='40' r='3.5' fill='%23ffffff' opacity='0.65'/%3E%3Ccircle cx='138' cy='49' r='3' fill='%23ffffff' opacity='0.5'/%3E%3Ccircle cx='145' cy='60' r='2.5' fill='%23ffffff' opacity='0.35'/%3E%3Cpath fill='%23ffffff' fill-rule='evenodd' clip-rule='evenodd' d='M90 38c2.9 0 5.4 1.9 6.2 4.7l1.7 6.1c2.4.6 4.7 1.5 6.9 2.8l5.8-2.6c2.6-1.2 5.7-.6 7.7 1.4l5.6 5.6c2 2 2.6 5.1 1.4 7.7l-2.6 5.8c1.3 2.2 2.2 4.5 2.8 6.9l6.1 1.7c2.8.8 4.7 3.3 4.7 6.2v8c0 2.9-1.9 5.4-4.7 6.2l-6.1 1.7c-.6 2.4-1.5 4.7-2.8 6.9l2.6 5.8c1.2 2.6.6 5.7-1.4 7.7l-5.6 5.6c-2 2-5.1 2.6-7.7 1.4l-5.8-2.6c-2.2 1.3-4.5 2.2-6.9 2.8l-1.7 6.1c-.8 2.8-3.3 4.7-6.2 4.7h-8c-2.9 0-5.4-1.9-6.2-4.7l-1.7-6.1c-2.4-.6-4.7-1.5-6.9-2.8l-5.8 2.6c-2.6 1.2-5.7.6-7.7-1.4l-5.6-5.6c-2-2-2.6-5.1-1.4-7.7l2.6-5.8c-1.3-2.2-2.2-4.5-2.8-6.9l-6.1-1.7c-2.8-.8-4.7-3.3-4.7-6.2v-8c0-2.9 1.9-5.4 4.7-6.2l6.1-1.7c.6-2.4 1.5-4.7 2.8-6.9l-2.6-5.8c-1.2-2.6-.6-5.7 1.4-7.7l5.6-5.6c2-2 5.1-2.6 7.7-1.4l5.8 2.6c2.2-1.3 4.5-2.2 6.9-2.8l1.7-6.1c.8-2.8 3.3-4.7 6.2-4.7h8zm-4 32v60h8V70h12L90 48 74 70h12z'/%3E%3C/svg%3E" />
-  
-  <!-- iOS 웹앱 전체화면 설정 -->
+  <!-- iOS 웹앱 전체화면 및 홈화면 설정 -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="경제지표" />
+  <meta name="mobile-web-app-capable" content="yes" />
+
+  <!-- iOS 사파리 전용 180x180 PNG 아이콘 및 파비콘 태그 (JS로 100% 순수 PNG 자동 생성 및 주입) -->
+  <link id="dynamicAppleIcon" rel="apple-touch-icon" sizes="180x180" />
+  <link id="dynamicFavicon" rel="icon" type="image/png" sizes="180x180" />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -80,16 +79,117 @@
       background: rgba(255, 255, 255, 0.2);
     }
   </style>
+
+  <!-- iOS Safari용 180x180 고해상도 PNG 아이콘 즉시 렌더링 스크립트 -->
+  <script>
+    (function generateAppleTouchPng() {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = 180;
+        canvas.height = 180;
+        const ctx = canvas.getContext('2d');
+
+        // 1. 배경 그라데이션 (Navy Gradient)
+        const bgGrad = ctx.createLinearGradient(0, 0, 0, 180);
+        bgGrad.addColorStop(0, '#193e73');
+        bgGrad.addColorStop(1, '#0b1931');
+        ctx.fillStyle = bgGrad;
+        ctx.fillRect(0, 0, 180, 180);
+
+        // 2. 우측 상단 회전 점들 (Accents)
+        const dots = [
+          { cx: 106, cy: 28, r: 4.5, a: 0.9 },
+          { cx: 120, cy: 34, r: 4.0, a: 0.8 },
+          { cx: 132, cy: 43, r: 3.5, a: 0.65 },
+          { cx: 142, cy: 54, r: 3.0, a: 0.5 },
+          { cx: 149, cy: 67, r: 2.5, a: 0.35 }
+        ];
+        dots.forEach(d => {
+          ctx.beginPath();
+          ctx.arc(d.cx, d.cy, d.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(255, 255, 255, ${d.a})`;
+          ctx.fill();
+        });
+
+        // 3. 기어(Gear) 외형 그리기
+        ctx.fillStyle = '#ffffff';
+        ctx.save();
+        ctx.translate(90, 90);
+
+        const teeth = 8;
+        const outerR = 52;
+        const innerR = 43;
+        const holeR = 30;
+
+        ctx.beginPath();
+        for (let i = 0; i < teeth; i++) {
+          const angle = (i * 2 * Math.PI) / teeth;
+          const halfStep = Math.PI / teeth;
+          const qStep = halfStep / 2;
+
+          const a1 = angle - qStep;
+          const a2 = angle + qStep;
+          const a3 = angle + halfStep - qStep;
+          const a4 = angle + halfStep + qStep;
+
+          ctx.lineTo(Math.cos(a1) * innerR, Math.sin(a1) * innerR);
+          ctx.lineTo(Math.cos(a1) * outerR, Math.sin(a1) * outerR);
+          ctx.lineTo(Math.cos(a2) * outerR, Math.sin(a2) * outerR);
+          ctx.lineTo(Math.cos(a2) * innerR, Math.sin(a2) * innerR);
+          ctx.lineTo(Math.cos(a3) * innerR, Math.sin(a3) * innerR);
+        }
+        ctx.closePath();
+        ctx.fill();
+
+        // 4. 기어 중앙 구멍 비우기 (Cutout)
+        ctx.globalCompositeOperation = 'destination-out';
+        ctx.beginPath();
+        ctx.arc(0, 0, holeR, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.restore();
+        ctx.globalCompositeOperation = 'source-over';
+
+        // 5. 상승 화살표 (Up Arrow)
+        ctx.fillStyle = '#ffffff';
+        ctx.beginPath();
+        // 화살표 머리
+        ctx.moveTo(90, 44);
+        ctx.lineTo(116, 74);
+        ctx.lineTo(99, 74);
+        // 기둥
+        ctx.lineTo(99, 136);
+        ctx.lineTo(81, 136);
+        ctx.lineTo(81, 74);
+        ctx.lineTo(64, 74);
+        ctx.closePath();
+        ctx.fill();
+
+        // 6. PNG Data URL 추출 및 <head> 링크 태그에 적용
+        const pngUrl = canvas.toDataURL('image/png');
+        document.addEventListener('DOMContentLoaded', () => {
+          const appleIcon = document.getElementById('dynamicAppleIcon');
+          const favicon = document.getElementById('dynamicFavicon');
+          if (appleIcon) appleIcon.href = pngUrl;
+          if (favicon) favicon.href = pngUrl;
+        });
+      } catch (e) {
+        console.warn('Canvas icon generation error:', e);
+      }
+    })();
+  </script>
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 min-h-screen transition-colors duration-200">
 
+  <!-- 헤더 영역 (모바일 최적화 2단 반응형) -->
   <header class="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <!-- 상단 1열: 로고, 타이틀, 상태뱃지, 우측 빠른 버튼들 -->
+      <div class="flex items-center justify-between h-14 sm:h-16 gap-2">
         
         <!-- 로고 및 타이틀 -->
-        <div class="flex items-center space-x-3">
-          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-b from-[#193e73] to-[#0b1931] flex items-center justify-center text-white shadow-md shadow-blue-900/30 flex-shrink-0 p-1.5 border border-blue-400/20">
+        <div class="flex items-center space-x-2 sm:space-x-3 min-w-0 flex-1">
+          <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-b from-[#193e73] to-[#0b1931] flex items-center justify-center text-white shadow-md shadow-blue-900/30 flex-shrink-0 p-1 border border-blue-400/20">
             <svg class="w-full h-full" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="104" cy="28" r="5" fill="#ffffff" opacity="0.9"/>
               <circle cx="117" cy="33" r="4.5" fill="#ffffff" opacity="0.8"/>
@@ -98,67 +198,112 @@
               <path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M90 38c2.9 0 5.4 1.9 6.2 4.7l1.7 6.1c2.4.6 4.7 1.5 6.9 2.8l5.8-2.6c2.6-1.2 5.7-.6 7.7 1.4l5.6 5.6c2 2 2.6 5.1 1.4 7.7l-2.6 5.8c1.3 2.2 2.2 4.5 2.8 6.9l6.1 1.7c2.8.8 4.7 3.3 4.7 6.2v8c0 2.9-1.9 5.4-4.7 6.2l-6.1 1.7c-.6 2.4-1.5 4.7-2.8 6.9l2.6 5.8c1.2 2.6.6 5.7-1.4 7.7l-5.6 5.6c-2 2-5.1 2.6-7.7 1.4l-5.8-2.6c-2.2 1.3-4.5 2.2-6.9 2.8l-1.7 6.1c-.8 2.8-3.3 4.7-6.2 4.7h-8c-2.9 0-5.4-1.9-6.2-4.7l-1.7-6.1c-2.4-.6-4.7-1.5-6.9-2.8l-5.8 2.6c-2.6 1.2-5.7.6-7.7-1.4l-5.6-5.6c-2-2-2.6-5.1-1.4-7.7l2.6-5.8c-1.3-2.2-2.2-4.5-2.8-6.9l-6.1-1.7c-2.8-.8-4.7-3.3-4.7-6.2v-8c0-2.9 1.9-5.4 4.7-6.2l6.1-1.7c.6-2.4 1.5-4.7 2.8-6.9l-2.6-5.8c-1.2-2.6-.6-5.7 1.4-7.7l5.6-5.6c2-2 5.1-2.6 7.7-1.4l5.8 2.6c2.2-1.3 4.5-2.2 6.9-2.8l1.7-6.1c.8-2.8 3.3-4.7 6.2-4.7h8zm-4 32v60h8V70h12L90 48 74 70h12z"/>
             </svg>
           </div>
-          <div>
-            <div class="flex items-center space-x-2 flex-wrap">
-              <h1 class="text-base sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-                경기·경제 지표 포털
+          <div class="min-w-0 flex-1">
+            <div class="flex items-center space-x-1.5 flex-wrap">
+              <h1 class="text-sm sm:text-lg font-extrabold tracking-tight text-slate-900 dark:text-white truncate">
+                경제·경기 지표 포털
               </h1>
-              <span id="syncStatusBadge" class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
-                <span id="syncStatusDot" class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse mr-1.5"></span>
+              <span id="syncStatusBadge" class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] sm:text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                <span id="syncStatusDot" class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse mr-1"></span>
                 <span id="syncStatusText">연결 대기</span>
               </span>
             </div>
           </div>
         </div>
 
-        <!-- 우측 툴바 (글자 조절, 설정, 동기화, 원본시트 링크, 테마 전환) -->
-        <div class="flex items-center space-x-2">
-          <!-- 글자 크기 미세 조절 컨트롤 -->
-          <div class="flex items-center bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-1 gap-1.5 shadow-inner">
-            <span class="text-[11px] text-slate-500 dark:text-slate-400 font-medium hidden sm:inline-flex items-center gap-1 select-none pr-1 border-r border-slate-200 dark:border-slate-700">
-              <i class="fa-solid fa-font text-blue-500 text-[10px]"></i>
-              <span>글자</span>
-            </span>
-            
-            <button onclick="changeFontSize(-5)" title="글자 축소" class="p-1 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded transition active:scale-95">
-              <i class="fa-solid fa-magnifying-glass-minus text-xs"></i>
-            </button>
-            
-            <!-- 슬라이더 -->
-            <input type="range" id="fontSizeRange" min="75" max="200" step="5" value="100" oninput="setFontScale(this.value)" title="글자 크기 미세 조절" class="w-14 sm:w-20 h-1 bg-slate-300 dark:bg-slate-600 rounded-lg cursor-pointer accent-blue-600">
-
-            <button onclick="changeFontSize(5)" title="글자 확대" class="p-1 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded transition active:scale-95">
-              <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
-            </button>
-
-            <button onclick="setFontScale(100)" title="기본 크기(100%)로 복원" class="text-[10px] px-1.5 py-0.5 rounded font-mono font-bold text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition select-none">
-              <span id="fontSizeDisplay">100%</span>
-            </button>
-          </div>
-
+        <!-- 우측 액션 버튼들 (모바일에서도 깔끔하게 정렬) -->
+        <div class="flex items-center space-x-1.5 flex-shrink-0">
           <!-- 연동 설정 버튼 -->
-          <button onclick="openSettingsModal()" title="시트 연동 설정 및 진단" class="inline-flex items-center px-2.5 py-1.5 text-xs font-medium rounded-lg text-slate-700 dark:text-slate-200 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition">
-            <i class="fa-solid fa-gear sm:mr-1.5 text-blue-500"></i>
-            <span class="hidden sm:inline">연동 설정</span>
+          <button onclick="openSettingsModal()" title="시트 연동 설정" class="p-1.5 sm:px-2.5 sm:py-1.5 text-xs font-medium rounded-lg text-slate-700 dark:text-slate-200 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition">
+            <i class="fa-solid fa-gear text-blue-500 sm:mr-1"></i>
+            <span class="hidden sm:inline">설정</span>
           </button>
 
           <!-- 원본 시트 바로가기 버튼 -->
-          <a id="sheetSourceBtn" href="https://docs.google.com/spreadsheets/d/1mxIKOuw_8-SR48bZhJisp00z_OjVx06tlmbKP06HUwg/edit?usp=sharing" target="_blank" title="구글 스프레드시트 열기" class="hidden md:inline-flex items-center px-2.5 py-1.5 text-xs font-medium rounded-lg text-emerald-700 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/60 dark:text-emerald-300 dark:hover:bg-emerald-900 border border-emerald-200 dark:border-emerald-800 transition">
+          <a id="sheetSourceBtn" href="https://docs.google.com/spreadsheets/d/1mxIKOuw_8-SR48bZhJisp00z_OjVx06tlmbKP06HUwg/edit?usp=sharing" target="_blank" title="구글 스프레드시트 열기" class="hidden sm:inline-flex items-center px-2.5 py-1.5 text-xs font-medium rounded-lg text-emerald-700 bg-emerald-50 hover:bg-emerald-100 dark:bg-emerald-950/60 dark:text-emerald-300 dark:hover:bg-emerald-900 border border-emerald-200 dark:border-emerald-800 transition">
             <i class="fa-solid fa-file-excel mr-1 text-emerald-600"></i>
-            시트 열기
+            시트
           </a>
 
           <!-- 실시간 동기화 버튼 -->
-          <button id="refreshBtn" onclick="fetchSheetData(true)" title="데이터 새로고침" class="inline-flex items-center px-3 py-1.5 text-xs font-semibold rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition active:scale-95">
-            <i id="refreshIcon" class="fa-solid fa-arrows-rotate sm:mr-1.5"></i>
+          <button id="refreshBtn" onclick="fetchSheetData(true)" title="데이터 새로고침" class="inline-flex items-center px-2.5 py-1.5 text-xs font-semibold rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition active:scale-95">
+            <i id="refreshIcon" class="fa-solid fa-arrows-rotate sm:mr-1 text-xs"></i>
             <span class="hidden sm:inline">동기화</span>
           </button>
 
           <!-- 다크모드 토글 -->
-          <button id="themeToggleBtn" onclick="toggleTheme()" title="다크/라이트 모드 전환" class="p-2 rounded-lg text-slate-600 dark:text-slate-300 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition">
+          <button id="themeToggleBtn" onclick="toggleTheme()" title="다크/라이트 모드 전환" class="p-1.5 sm:p-2 rounded-lg text-slate-600 dark:text-slate-300 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 transition">
             <i id="themeIcon" class="fa-solid fa-moon text-xs"></i>
           </button>
         </div>
+      </div>
+
+      <!-- 상단 2열 (글자 크기 미세 조절 바: 모바일에서도 독립 줄로 배치되어 절대 겹치지 않음) -->
+      <div class="py-1.5 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between gap-2 text-xs">
+        <div class="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 font-medium">
+          <i class="fa-solid fa-font text-blue-500 text-xs"></i>
+          <span>글자 크기</span>
+        </div>
+
+        <!-- 슬라이더 및 축소/확대/리셋 버튼 -->
+        <div class="flex items-center bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-2 py-0.5 gap-2 shadow-inner">
+          <button onclick="changeFontSize(-5)" title="글자 축소" class="p-1 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded transition active:scale-90">
+            <i class="fa-solid fa-minus text-[10px]"></i>
+          </button>
+          
+          <input type="range" id="fontSizeRange" min="75" max="200" step="5" value="100" oninput="setFontScale(this.value)" title="글자 크기 조절 (75% ~ 200%)" class="w-24 sm:w-36 h-1.5 bg-slate-300 dark:bg-slate-600 rounded-lg cursor-pointer accent-blue-600">
+
+          <button onclick="changeFontSize(5)" title="글자 확대" class="p-1 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 rounded transition active:scale-90">
+            <i class="fa-solid fa-plus text-[10px]"></i>
+          </button>
+
+          <button onclick="setFontScale(100)" title="100%로 초기화" class="text-[10px] px-1.5 py-0.2 rounded font-mono font-bold text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition select-none">
+            <span id="fontSizeDisplay">100%</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-5">
+    
+    <!-- 컨트롤 바: 검색창 및 카테고리 필터 -->
+    <div class="mb-4 space-y-2.5">
+      <div class="flex items-center justify-between">
+        <!-- 실시간 검색 인풋 -->
+        <div class="relative w-full max-w-md">
+          <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 text-xs">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="지표명, 그룹 또는 메모 검색..."
+            oninput="handleSearch(this.value)"
+            class="block w-full pl-8 pr-8 py-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-xs sm:text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm transition"
+          />
+          <button id="clearSearchBtn" onclick="clearSearch()" class="hidden absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600">
+            <i class="fa-solid fa-circle-xmark text-xs"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 카테고리 필터 탭 -->
+      <div id="categoryTabs" class="flex items-center space-x-1.5 overflow-x-auto pb-1 custom-scrollbar text-xs">
+        <!-- JS로 동적 생성 -->
+      </div>
+    </div>
+
+    <!-- 현황 요약 바 & 마지막 동기화 시간 -->
+    <div class="flex items-center justify-between pb-2.5 border-b border-slate-200 dark:border-slate-800 text-[11px] sm:text-xs text-slate-500 dark:text-slate-400 mb-4">
+      <div class="flex items-center space-x-1.5 sm:space-x-2">
+        <span>등록: <strong id="totalCount" class="text-blue-600 dark:text-blue-400 font-bold">0</strong>개</span>
+        <span>•</span>
+        <span>그룹: <strong id="totalGroupCount" class="text-indigo-600 dark:text-indigo-400 font-bold">0</strong>개</span>
+      </div>
+      <div class="flex items-center space-x-1">
+        <i class="fa-regular fa-clock text-[10px]"></i>
+        <span id="lastSyncedTime" class="font-medium text-slate-600 dark:text-slate-300">연결 대기</span>
       </div>
     </div>
   </header>
